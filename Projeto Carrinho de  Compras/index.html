@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="Imagens/loja.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css"><!--Estilo proprio sempre abaixo de estilos de terceiros-->
+
+    <title>Loja</title>
+
+</head>
+
+<body>
+    
+<div class="container">
+    <h1 class="text-center"> <i style="color: red;" class="bi bi-shop " ></i>  Lojinha  </h1>
+    
+      <table class="table table-hover table-dark"> <!-- cria uma tabela-->
+    
+        <thead> <!-- cabeçalho da tabela-->
+            <tr> <!-- coluna da tabela-->
+                <th>Imagem</th> <!-- inicio linha da coluna-->
+                <th>Produto</th>
+                <th>Preço Unitário</th>
+                <th>Quantidade</th>
+                <th>Total</th><!-- fim da linha da coluna-->
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr> <!-- linhas da tabela-->
+                <td><img src="imagens/asus10.png" alt="foto.cel" width="150"></td> <!--dados da tabela-->
+                    <td>
+                        <div><span id="descrição">Smartphone Asus Zenfone 10</span> </div>
+                        <div><span id="descrição">256gb 5g Octa Core Snapdragon</span></div>
+                        <div><span id="descrição">8+gen2 8gb 5,92 Câm Dupla + Self 32mp</span></div>
+                        <div> <span id="descrição">Cor: Verde</span></div>
+                    </td>
+                <td id="valor_1">R$ 4.000</td>
+                <td>
+                    <span class="badge bg-danger" onclick="alterarQtd(1, '-')"> <i class="bi bi-dash"></i> </span>
+                    <span id="qtd_1">0</span>
+                    <span class="badge bg-primary" onclick="alterarQtd(1, '+')"> <i class="bi bi-plus"></i> </span>
+                </td>
+                <td id="total_1">0</td>
+            </tr>
+            <tr> <!-- linhas da tabela-->
+                <td><img src="imagens/notebook.png" alt="foto.note" width="150"></td> <!--dados da tabela-->
+                <td>
+                    <div id="descrição">Notebook Gamer Asus Rog Strix G614JV-AS73</div>
+                    <div id="descrição">Intel Core i7 2.6GHz / Memória 16GB / SSD 512GB</div>
+                    <div id="descrição">16" / Windows 11 / RTX 4060 8GB</div>
+                </td>
+                <td id="valor_2">R$ 9.000</td>
+                <td>
+                    <span class="badge bg-danger" onclick="alterarQtd(2, '-')"> <i class="bi bi-dash"></i> </span>
+                    <span id="qtd_2">0</span>
+                    <span class="badge bg-primary" onclick="alterarQtd(2, '+')"> <i class="bi bi-plus"></i> </span>
+                </td>
+                <td id="total_2">0</td>
+            </tr>
+            <tr> <!-- linhas da tabela-->
+                <td><img src="imagens/televisao.png" alt="foto.tv" width="150"></td> <!--dados da tabela-->
+                <td>
+                    <div id="descrição">A melhor plataforma SmartTV</div>
+                    <div id="descrição">HDR</div>
+                    <div id="descrição">Full HD</div>
+                    <div id="descrição">Samsung TV Plus: Streaming com mais de 65 canais
+    
+                    </div>
+                </td>
+                <td>
+                    <div id="valor_3">R$ 1.000 </div>
+                </td>
+                <td>
+                    <span class="badge bg-danger" onclick="alterarQtd(3, '-')"> <i class="bi bi-dash"></i> </span>
+                    <span id="qtd_3">0</span>
+                    <span class="badge bg-primary" onclick="alterarQtd(3, '+')"> <i class="bi bi-plus"></i> </span>
+                </td>
+                <td id="total_3">0</td>
+            </tr>
+    
+        </tbody>
+    
+      </table>
+            <footer class="text-center" >
+                <span> <i class="bi bi-cart-check"></i> Subtotal: <span id="subtotal">R$0</span></span>
+            </footer>
+</div>
+</body>
+    <script src="script/funcoes.js">
+        
+    </script>
+
+</html>
